@@ -1,0 +1,10 @@
+.travis.yml
+
+lib/*
+scratch/*
+Makefile
+Makefile.defs
+.tar.gz$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
