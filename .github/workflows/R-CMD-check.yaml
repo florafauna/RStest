@@ -46,6 +46,8 @@ jobs:
           install.packages('remotes')
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
+          install.packages('tinytex')
+          tinytex::install_tinytex()
         shell: Rscript {0}
 
       - name: Restore R package cache
