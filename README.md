@@ -1,3 +1,8 @@
+  <!-- badges: start -->
+  [![R-CMD-check](https://github.com/florafauna/RStest/workflows/R-CMD-check/badge.svg)](https://github.com/florafauna/RStest/actions)
+  <!-- badges: end -->
+
+
 # ReplicationSuccess
 
 Provides utilities for the design and analysis of replication studies.
