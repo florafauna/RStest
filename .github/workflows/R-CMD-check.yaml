@@ -48,6 +48,7 @@ jobs:
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
           install.packages('tinytex')
           tinytex::install_tinytex()
+          tinytex::parse_packages(text = "! LaTeX Error: File `doi.sty' not found.")
         shell: Rscript {0}
 
       - name: Restore R package cache
